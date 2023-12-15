@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  width: max-content;
+  transition: transform $smoothTime;
+
+  &:hover {
+    transform: scale(102%);
+  }
+
+  &__image {
+    height: 38px;
+
+    @include onTablet {
+      height: 56px;
+    }
+  }
+}

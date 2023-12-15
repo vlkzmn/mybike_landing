@@ -1,0 +1,13 @@
+.footer {
+  padding-bottom: 200px;
+
+  @include onTablet {
+    padding-bottom: 480px;
+  }
+
+  @include onDesktop {
+    padding-bottom: 555px;
+  }
+
+  @include bgImage(cover, 80%, footer, jpg);
+}

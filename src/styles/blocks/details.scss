@@ -1,0 +1,39 @@
+.details {
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__element {
+    margin-bottom: 48px;
+  }
+
+  &__element-images {
+    margin-bottom: 16px;
+  }
+
+  &__element-title {
+    margin-bottom: 8px;
+    @extend %title;
+  }
+
+  &__element-description {
+    @extend %text;
+  }
+
+  &__link-box {
+    margin: 0 auto;
+    max-width: 278px;
+
+    @include onTablet {
+      max-width: 392px;
+    }
+
+    @include onDesktop {
+      max-width: 324px;
+    }
+  }
+}
